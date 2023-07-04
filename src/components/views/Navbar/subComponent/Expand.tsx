@@ -40,6 +40,7 @@ const Expand: FC<{ item: NavbarItemType }> = ({ item }) => {
         {isTimeOut &&
           item.dropDownData?.map((subItem: NavbarItemType, index: number) => (
             <Link
+              key={index}
               className="px-5 hover:bg-gray-50 rounded-md py-1 duration-300 "
               href={"subItem.href"}
             >
