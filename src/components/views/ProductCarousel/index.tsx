@@ -2,7 +2,7 @@
 
 const ProductCarousel = ({ProductData}: any) => {
   return (
-    <div>ProductCarousel</div>
+    <div>{ProductData[1].productName}</div>
   )
 }
 
