@@ -9,7 +9,7 @@ const ProductCarousel: FC<{ProductData: Array<oneProductType>}> = ({ProductData}
   return (
     <div className="flex">
       {dataToSend.map((item:oneProductType, index:number)=>(
-        <Card singleProductData={item}/>
+        <Card key={index} singleProductData={item}/>
       ))
       }
     </div>
