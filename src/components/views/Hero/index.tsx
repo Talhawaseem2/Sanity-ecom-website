@@ -4,7 +4,7 @@ import { BsCart2 } from "react-icons/bs";
 
 const Hero = () => {
     const btnText = "Start \n Shopping";
-  return <div className="py-5 flex justify-between items-center">
+  return <div className="py-5 flex justify-between items-center px-2">
     {/* Right Side */}
     <div className="space-y-6 max-w-sm">
         <button 
