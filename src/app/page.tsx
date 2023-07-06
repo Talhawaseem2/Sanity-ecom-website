@@ -14,6 +14,7 @@ async function fetchAllProductsData() {
   // }
   // return res.json();
   return {response: "Hi"}
+}
 
 
 
@@ -21,8 +22,8 @@ export default async function Home() {
   let {response} = await fetchAllProductsData();  
   return (
     <div>
-      {/* <Hero /> */}
-      {/* <ProductsType /> */}
+      <Hero />
+      <ProductsType />
       <ProductCarousel ProductData = {response}/>
     </div>
   )

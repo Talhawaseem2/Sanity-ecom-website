@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { createClient } from "next-sanity";
+import { SanityClient, createClient } from "next-sanity";
 import { log } from "console";
 
 
