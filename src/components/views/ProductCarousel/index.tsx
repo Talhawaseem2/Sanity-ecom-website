@@ -1,6 +1,6 @@
 
 
-const ProductCarousel = () => {
+const ProductCarousel = ({ProductData}: any) => {
   return (
     <div>ProductCarousel</div>
   )
