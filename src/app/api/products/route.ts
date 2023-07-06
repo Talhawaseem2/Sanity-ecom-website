@@ -1,14 +1,7 @@
 import { NextResponse } from "next/server";
 import { SanityClient, createClient } from "next-sanity";
 import { log } from "console";
-
-
-const client: SanityClient = createClient({
-    projectId: `${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}`,
-    dataset:`${process.env.NEXT_PUBLIC_SANITY_DATASET}`,
-    apiVersion:"2023-07-04",
-    useCdn: false
-});
+import { client } from "../../../../sanity/lib/client";
 
 
 export async function GET() {
