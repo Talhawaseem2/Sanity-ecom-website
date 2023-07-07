@@ -112,20 +112,30 @@ const ProductCarousel: FC<{ProductData: Array<oneProductType>}> = ({ProductData}
         initialX = e.touches[0].clientX;
     };
 
+let dataToItrate = ProductData.slice(0, 15)
+
 
     return (
+        <div className="space-y-4">
+        <div className="text-center space-y-3">
+        <p className="text-blue-500 text-sm font-semibold">PRODUCTS</p>
+        <h3 className="text-3xl text-gray-800 font-bold">
+          Check What We Have
+        </h3>
+      </div>
         <div
             onMouseMove={mouseMoves}
             onMouseDown={mouseDown}
             onMouseUp={mouseUp}
-            className="select-none flex gap-4 overflow-x-hidden scrollGrab"
+            className="select-none flex gap-4 overflow-y-hidden overflow-x-hidden scrollGrab"
             onTouchMove={mouseMovesForMobile}
             onTouchStart={mouseDownForMobile}
             onTouchEnd={mouseUp}
         >
-            {ProductData.map((item: oneProductType, index: number) => (
+            {dataToItrate.map((item: oneProductType, index: number) => (
                 <Card key={index + 4} singleProductData={item} />
             ))}
+        </div>
         </div>
     )
 }
