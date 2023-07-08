@@ -4,6 +4,7 @@ import ProductCarousel from '@/components/views/ProductCarousel';
 import ProductsType from '@/components/views/ProductTypes'
 import {useEffect} from "react"
 import { oneProductType, responseType } from '@/components/utils/ProductsDataArrayAndType';
+import Jewellery from '@/components/Jewellery';
 
 async function fetchAllProductsData() {
   let res = await fetch(`${BASE_PATH_FORAPI}/api/products`);
@@ -24,6 +25,7 @@ export default async function Home() {
       <Hero />
       <ProductsType />
       <ProductCarousel ProductData={response} />
+      <Jewellery />
     </div>
   )
 }
