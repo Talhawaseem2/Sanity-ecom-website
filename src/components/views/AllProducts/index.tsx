@@ -55,10 +55,10 @@ export default class AllProductsCompo extends Component<{
               <b>Yay! You have seen it all</b>
             </p>
           }
-          className="grid grid-cols-3 gap-4"
+          className="grid grid-cols-3 gap-4" 
         >
-          {this.state.items.map((item:oneProductType, index:number)=>(
-            <Card singleProductData={item} />
+          { this.state.items.map((item:oneProductType, index:number)=>(
+            <Card singleProductData={item} key={index} />
           ))}
         </InfiniteScroll>
       </div>
