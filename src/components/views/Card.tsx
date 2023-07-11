@@ -21,6 +21,7 @@ const Card: FC<{singleProductData: oneProductType}> = ({singleProductData}) => {
     
       
   return (
+    
     <Link href={`/catalog/${singleProductData.slug.current}`}>
     <div className='max-w-sm min-w-[24rem] space-y-3 select-none hover:scale-110 duration-300'>
         <div className='relative w-full'>
